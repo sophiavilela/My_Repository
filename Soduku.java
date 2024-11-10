@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Soduku here.
+ * Soduku Code
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @Sophia
+ * @v2
  */
 
 import java.util.*;
@@ -47,7 +47,7 @@ public class Soduku
         return true; // Solved
     }
 
-    // Check if placing num in board[row][col] is valid
+    // Check if placing num in board[row][col] workds
     private boolean isValid(int row, int col, int num) {
         // Check row
         for (int i = 0; i < SIZE; i++) {
@@ -78,8 +78,8 @@ public class Soduku
         }
     }
 
-    public static void main(String[] args) {
-        Soduku solver = new Soduku();
+    public static void main(String[] args) { //main at the end
+        Soduku solver = new Soduku(); //runs again (Recursion)
         if (solver.solve()) {
             System.out.println("Solved Sudoku:");
             solver.printBoard();
